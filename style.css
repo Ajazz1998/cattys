@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+
+.logo{
+    display: flex;
+    font-size: 30px;
+}
+
+.topnav{
+    display: flex;
+}
+
+.topnav li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mySlides > div{
+    margin: 0 120px;
+
+}
