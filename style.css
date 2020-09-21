@@ -21,6 +21,12 @@ a{
     color: #000;
 }
 
+h2{
+    font-size: 100px;
+    font-weight: 300;
+    height: 150px;
+}
+
 h1{
     font-size: 100px;
     font-weight: 700;
@@ -32,9 +38,20 @@ h1::after{
    content: "";
    display: block;
    height: 1px;
-   background: var(--thrird-color);
+   background: var(--secondary-color);
    width: 30%;
    margin: 30px 0;
+   opacity: .5;
+}
+
+p{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+h6{
+    font-size: 40px;
+    font-weight: 300;
 }
 
 span{
@@ -117,7 +134,8 @@ span{
 
 .mySlides img{
     width: 100%;
-    height: 550%;
+    height: 140%;
+    margin-top: -100px;
 }
 
 .mySlides .conten{
@@ -127,4 +145,6 @@ span{
 
 .mySlides .conten p{
     color: var(--secondary-color);
+    width: 85%;
+    opacity: .7;
 }
