@@ -45,7 +45,7 @@ h1::after{
 
 p{
     font-weight: 100;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 h6{
@@ -258,24 +258,34 @@ li:hover{
 }
 
 
-.about, .history{
+.about{
     padding: 100px 0;
 }
 
 .a-img img{
     width: 100%;
     margin-top: 50px;
+    border-radius: 8px;
+
 }
 
-.a-content p{
+.a-content p, .c-content p{
     color: var(--thrird-color);
 }
 
+.history{
+    padding-bottom: 200px;
+}
 
-.h-img img{
+.h-img img, .slideShow img{
     width: 100%;
     height: 90%;
     margin-top: 80px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .h-btn{
@@ -316,7 +326,7 @@ li:hover{
     display: none;
 }
 
-.h-btn .active{
+.active{
     color: var(--main-color);
 }
 
@@ -330,6 +340,63 @@ li:hover{
 
 
 
+.competitions{
+    padding-bottom: 100px;
+}
+
+.slideShow img{
+    width: 100%;
+    height: 50%;
+    margin-top: 80px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.slideShow ul{
+    display: flex;
+}
+
+.c-btn{
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+.dot:hover, .actives{
+    background-color: var(--main-color);
+
+}
+
+
+.dot:hover::before, .actives::before {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 17px;
+    border: var(--main-color) solid 1px;
+    margin-left: -5.6px;
+    margin-top: -5.5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 
 
 /* http://welsh-corgi.themerex.net/ */

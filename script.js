@@ -10,7 +10,22 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "grid";  
-    setTimeout(carousel, 2000);
+    setTimeout(carousel, 2500);
+}
+
+var myIndex = 0;
+carouse();
+
+function carouse() {
+  var i;
+  var x = document.getElementsByClassName("mySlid");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carouse, 3500);
 }
 
 
@@ -35,8 +50,38 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+var slidesIndex = 1;
+showD(slidesIndex);
+
+function plusD(n) {
+  showD(slidesIndex += n);
+}
+
+function currentD(n) {
+  showD(slidesIndex = n);
+}
+
+function showD(n) {
+  var i;
+  var x = document.getElementsByClassName("slideShow");
+  var dots = document.getElementsByClassName("demos");
+  if (n > x.length) {slidesIndex = 1}
+  if (n < 1) {slidesIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" actives", "");
+  }
+  x[slidesIndex-1].style.display = "block";  
+  dots[slidesIndex-1].className += " actives";
 }
