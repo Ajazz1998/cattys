@@ -56,6 +56,50 @@ h6{
 span{
     color: var(--main-color);
 }
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding:12px 17px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #fff;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
 
 .grid_2{
     display: grid;
@@ -398,6 +442,15 @@ li:hover{
     -o-border-radius: 50%;
 }
 
+.c-blog{
+    margin: 15px 0;
+}
+
+.c-blog h3{
+    font-size: 27px;
+    line-height: 1.3;
+}
+
 .c-blog ul{
     display: flex;
     margin: 10px 0;
@@ -415,13 +468,22 @@ li:hover{
     margin-top: -8px;
 }
 
+.c-blog ul li p:hover, .c-blog ul li i:hover{
+    color: #000;
+}
+
 .c-blog ul li i{
     color: var(--thrird-color);
     opacity: .6;
 }
 
+.c-content{
+    position: relative;
+}
 
-
+.sale{
+    padding: 150px 0;
+}
 
 
 
