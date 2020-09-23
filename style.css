@@ -481,9 +481,93 @@ li:hover{
     position: relative;
 }
 
+.c-content b, .a-content b{
+    font-weight: 500;
+    color: #000;
+}
+
 .sale{
     padding: 150px 0;
 }
+
+
+.grid_2 .img{
+    position: relative;
+    width: 120%;
+    height: 285px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid_2 .img:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #fff, #fff);
+    opacity: .6;
+    border-radius: 20px;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+}
+
+.grid_2 .img .back_img {
+    opacity: 0;
+    width: 90%;
+    height: 50%;
+    padding: 100px;
+    position: absolute;
+    color: var(--white-color);
+}
+
+.back_img{
+    color: #fff;
+}
+
+.grid_2 .img .back_img:hover{
+    opacity: 1;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+}
+
+
+.grid_2 .img-1{
+    background: url('/img/h1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-2{
+    background: url('/img/h2.jpg');
+}
+
+.img-3{
+    background: url('/img/h3.jpg');
+}
+
+.img-4{
+    background: url('/img/h4.jpg');
+}
+
 
 
 
