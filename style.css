@@ -56,6 +56,8 @@ h6{
 span{
     color: var(--main-color);
 }
+
+
 .button {
     border-radius: 4px;
     background-color: #f4511e;
@@ -116,7 +118,7 @@ span{
 .row_2{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 65%;
 }
 
 .f-center{
@@ -241,14 +243,17 @@ span{
 
 li:hover{
    color: var(--main-color);
-   transition: 600ms;
-
+   transition: 200ms;
+   -webkit-transition: 200ms;
+   -moz-transition: 200ms;
+   -ms-transition: 200ms;
+   -o-transition: 200ms;
 }
 
 .link-1 li:hover::after{
    content: "";
    display: block;
-   transition: 600ms;
+   transition: 200ms;
    border: 2px solid var(--main-color);
    border-radius: 50%;
    height: 15px;
@@ -260,10 +265,10 @@ li:hover{
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
-   -webkit-transition: 600ms;
-   -moz-transition: 600ms;
-   -ms-transition: 600ms;
-   -o-transition: 600ms;
+   -webkit-transition: 200ms;
+   -moz-transition: 200ms;
+   -ms-transition: 200ms;
+   -o-transition: 200ms;
 }
 
 .page_links .link-2{
