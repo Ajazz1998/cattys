@@ -463,6 +463,10 @@ li:hover{
     margin: 15px 0;
 }
 
+.sale .c-content .button{
+    width: 270px;
+}
+
 .c-blog h3{
     font-size: 27px;
     line-height: 1.3;
@@ -617,6 +621,32 @@ li:hover{
     background: url('/img/h4.jpg');
 }
 
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(236, 236, 236);
+    margin: 10px 30px;
+}
+
+.footer > div{
+    margin-top:15px;
+}
+
+.footer > div p{
+    font-size: 14px;
+    color: var(--thrird-color);
+}
+
+.footer > div a{
+    color: #000;
+}
+
+.footer .downn li a{
+    color: var(--thrird-color);
+    font-size: 15px;
+    font-weight: 300;
+}
 
 
 
