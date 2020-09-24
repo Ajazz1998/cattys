@@ -205,6 +205,23 @@ span{
     opacity: .9;
 }
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 .page_links{
     position: relative;
 }
@@ -509,7 +526,7 @@ li:hover{
     background-size: cover;
 }
 
-.grid_2 .img::before {
+.grid_2 .img:hover::before {
     content: '';
     position: absolute;
     top: 0;
@@ -531,7 +548,7 @@ li:hover{
     width: 110%;
     height: 50%;
     padding:0 50px;
-    left: 40px;
+    left: 10px;
     text-align: center;
     position: absolute;
     color: var(--white-color);
@@ -551,19 +568,26 @@ li:hover{
 
 .grid_2 .img .back_img button{
     background: transparent;
+    position: absolute;
+    top: 150px;
+    right: 60px;
 }
 
+.grid_2 .img .back_img button span:after {
+    color: #000;
+  }
 
 .grid_2 .img .back_img button span{
     color: #000;
     background: transparent;
+    font-weight: 700;
 }
 
 .back_img{
     color: #fff;
 }
 
-.grid_2 .img .back_img{
+.grid_2 .img .back_img:hover{
     opacity: 1;
     transition: 600ms;
     -webkit-transition: 600ms;
