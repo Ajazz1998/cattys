@@ -140,6 +140,7 @@ span{
 .logo{
     display: flex;
     font-size: 40px;
+    margin-top: -15px;
 }
 
 .topnav{
