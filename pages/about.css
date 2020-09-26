@@ -20,10 +20,6 @@
     padding: 1px 6px;
     font-size: 10px;
     border-radius: 50%;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
 }
 
 .ab-social a:hover{
@@ -287,4 +283,118 @@
     background-repeat: no-repeat;
     background-size: cover;  
     height: 50vh;
+  }
+
+  .sortnav{
+      list-style: none;
+     margin-bottom: 50px;
+     margin-top: 100px;
+  }
+
+  .sortnav a{
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #000;
+      margin: 0 5px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  .sortnav a:hover{
+    background: var(--main-color);
+    color: #fff;
+  }
+
+  .sortnav li:hover{
+      color: #fff;
+  }
+
+  .sortnav .active{
+      background: var(--main-color);
+  }
+
+
+.sale{
+  margin-top: -100px;
+}
+
+  .sale .grid_2{
+    grid-gap: 10px;
+  }
+
+  .sale .grid_2 h1{
+    font-size: 80px;
+  }
+
+  .s-contact{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .s-contact li:hover{
+    transform: scale(.9);
+    transition: 300ms;
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+  .s-contact i{
+    color: var(--main-color);
+    font-size: 45px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .s-contact i:hover{
+    color: #000;
+    transition: 300ms;
+
+  }
+
+  .s-contact h3{
+    font-size:25px;
+    color: #000;
+  }
+
+  .s-contact p{
+    margin-top: -10px;
+  }
+
+
+.sale .s-content li p::after{
+    display: none;
+ }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: transparent var(--main-color);
+    border: 1px solid ;
+    color: #000;
   }

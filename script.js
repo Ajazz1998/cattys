@@ -1,3 +1,29 @@
+
+$(document).ready(function(){
+  $(".category_item").click(function(){
+    
+      var catagory = $(this).attr("id");
+      
+      if(catagory == "all"){
+          $(".grid-item").hide();
+
+          setTimeout(function(){
+              $(".grid-item").show();
+
+          }, 300)
+      } else {
+          $(".grid-item").hide();
+
+          setTimeout(function(){
+              $("." + catagory).show();
+
+          }, 300)
+      }
+  });
+
+});
+
+
 var myIndex = 0;
 carousel();
 
@@ -59,8 +85,6 @@ function showDivs(n) {
   dots[slideIndex-1].className += " active";
 
 }
-
-
 
 
 var slidesIndex = 1;

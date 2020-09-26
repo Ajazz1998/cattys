@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="../Resources/media.css">
     <link rel="stylesheet" href="../Resources/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>catty</title>
 </head>
 <body>
@@ -21,59 +23,70 @@
 
             <ul class="topnav">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="/gallary.html">Gallary</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
     <section class="garlary">
         <h2 class="f-h2 f-center"><span>Gallery</span></h2>
+                
+        <ul class="sortnav f-center">
+            <a class="category_item active" id="all" ><li>VIEW ALL</li></a>
+            <a class="category_item" id="fa" ><li>FAMILY</li></a>
+            <a class="category_item" id="tr" ><li>TRAININGS</li></a>
+            <a class="category_item" id="co" ><li>COMPETITIONS</li></a>
+        </ul>
+
+        <div class="nav_bar menus f-center">
+
+        </div>
 
         <div class="grid-container">
-            <div class="grid-item item1">
+            <div class="grid-item item1 co">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item2">
+            <div class="grid-item item2 fa co">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item3 grid-box">
+            <div class="grid-item item3 grid-box co">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>  
-            <div class="grid-item item4 grid-box">
+            <div class="grid-item item4 grid-box co">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item5 grid-box">
+            <div class="grid-item item5 grid-box co fa">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item6 grid-box">
+            <div class="grid-item item6 grid-box co fa">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item7 grid-box">
+            <div class="grid-item item7 grid-box co fa">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
         </div>
 
         <div class="grid-container grid-fix">
-            <div class="grid-item item8">
+            <div class="grid-item item8 co">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item9">
+            <div class="grid-item item9 tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>  
-            <div class="grid-item item10 grid-box">
+            <div class="grid-item item10 grid-box tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item11 grid-box">
+            <div class="grid-item item11 grid-box tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item12 grid-box">
+            <div class="grid-item item12 grid-box tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item13 grid-box">
+            <div class="grid-item item13 grid-box tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
-            <div class="grid-item item14 grid-box">
+            <div class="grid-item item14 grid-box tr">
                 <div class="back_img"><a href="#"><i class="fa fa-eye"></i></a></div>
             </div>
         </div>
@@ -95,5 +108,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/Resources/jquery.waypoints.min.js"></script>
+    <script src="../script.js"></script>
+
 </body>
 </html>
