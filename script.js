@@ -36,7 +36,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "grid";  
-    setTimeout(carousel, 2500);
+    setTimeout(carousel, 4500);
 }
 
 var myIndex = 0;
