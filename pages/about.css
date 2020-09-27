@@ -95,7 +95,6 @@
     background-size: cover;
     height: 50vh;
     cursor: pointer;
-    margin-bottom: 80px;
 }
 
 .grid-fix{
@@ -317,7 +316,8 @@
 
 
 .sale{
-  margin-top: -100px;
+  /* margin-top: 50px; */
+  padding: 80px 0;
 }
 
   .sale .grid_2{

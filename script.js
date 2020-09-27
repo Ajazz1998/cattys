@@ -24,6 +24,102 @@ $(document).ready(function(){
 });
 
 
+
+const counters = document.querySelectorAll('.counter');
+const speed = 100; 
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+
+		const inc = target / speed;
+    const targets = Math.round(inc);
+
+		if (count < target) {
+			counter.innerText = count + targets;
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+
+
+
+$(document).ready(function() {
+  $('.js--wp-1').waypoint(function(){
+    $('.js--wp-1').addClass('counter'); 
+}, {
+    offset: '50%'
+});
+
+  $('.js--wp-slide').waypoint(function(){
+    $('.js--wp-slide').addClass('animated fadeIn'); 
+}, {
+    offset: '80%'
+});
+
+  $('.js--wp-copy').waypoint(function(){
+    $('.js--wp-copy').addClass('animated fadeInUp'); 
+}, {
+    offset: '100%'
+});
+
+$('.js--wp-2').waypoint(function(){
+$('.js--wp-2').addClass('animated fadeInRight'); 
+}, {
+offset: '50%'
+});
+
+$('.js--wp-3').waypoint(function(){
+$('.js--wp-3').addClass('animated fadeInLeft'); 
+}, {
+offset: '50%'
+});
+
+$('.js--wp-footerright').waypoint(function(){
+$('.js--wp-footerright').addClass('animated fadeInRight'); 
+}, {
+offset: '70%'
+});
+
+$('.js--wp-footerleft').waypoint(function(){
+$('.js--wp-footerleft').addClass('animated fadeInLeft'); 
+}, {
+offset: '70%'
+});
+
+$('.js--wp-25').waypoint(function(){
+$('.js--wp-25').addClass('animated fadeInRight'); 
+}, {
+offset: '50%'
+});
+
+$('.js--wp-35').waypoint(function(){
+$('.js--wp-35').addClass('animated fadeInLeft'); 
+}, {
+offset: '50%'
+});
+
+$('.js--wp-4').waypoint(function(){
+$('.js--wp-4').addClass('animated swing'); 
+}, {
+offset: '70%'
+});
+
+$('.js--wp-5').waypoint(function(){
+$('.js--wp-5').addClass('animated pulse'); 
+}, {
+offset: '70%'
+});
+
+});
+
+
 var myIndex = 0;
 carousel();
 
@@ -113,3 +209,5 @@ function showD(n) {
   x[slidesIndex-1].style.display = "block";  
   dots[slidesIndex-1].className += " actives";
 }
+
+
